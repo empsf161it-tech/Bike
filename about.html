@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us — APEX MOTORS</title>
+  <meta name="description" content="Discover the story, mission, engineering team, and racing legacy behind APEX MOTORS motorcycle showroom.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────── -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+
+      <nav class="navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="home2.html" class="navbar__link">Home 2</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="about.html" class="navbar__link active">About</a>
+        <a href="blog.html" class="navbar__link">Blog</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL Mode">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+        <a href="login.html" class="navbar__login-btn">Login</a>
+        
+        <button class="navbar__hamburger" aria-label="Open Navigation Drawer" aria-expanded="false">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MOBILE DRAWER ─────────────────────────────────── -->
+  <div class="drawer-overlay"></div>
+  <aside class="drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer__header">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+      <button class="drawer__close" aria-label="Close Drawer">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="drawer__links">
+      <a href="index.html" class="drawer__link"><i class="ri-home-4-line"></i> Home</a>
+      <a href="home2.html" class="drawer__link"><i class="ri-layout-grid-line"></i> Home 2</a>
+      <a href="services.html" class="drawer__link"><i class="ri-tools-line"></i> Services</a>
+      <a href="about.html" class="drawer__link active"><i class="ri-information-line"></i> About</a>
+      <a href="blog.html" class="drawer__link"><i class="ri-article-line"></i> Blog</a>
+      <a href="contact.html" class="drawer__link"><i class="ri-contacts-line"></i> Contact</a>
+    </div>
+
+    <div class="drawer__footer">
+      <div class="drawer__toggles">
+        <button class="btn btn--secondary btn--full" data-theme-toggle>
+          <i class="ri-sun-line"></i> Toggle Theme
+        </button>
+        <button class="btn btn--secondary btn--icon" data-rtl-toggle aria-label="Toggle RTL">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn--primary btn--full">Login</a>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+  <main>
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="section hero--centered" style="padding-block-start: calc(var(--navbar-height) + var(--space-5)); padding-block-end: var(--space-4); background: linear-gradient(to bottom, var(--color-surface), var(--color-bg));">
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge"><i class="ri-flag-2-line"></i> Born on the Circuit</div>
+          <h1 class="hero__title">PASSION FOR SPEED. <span>PRECISION ENGINEERING.</span></h1>
+          <p class="hero__subtitle">Discover the story, philosophy, and master craftsmen behind APEX MOTORS — your ultimate destination for high-performance motorcycles.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: COMPANY STORY & MISSION -->
+    <section class="section">
+      <div class="container">
+        <div class="zigzag">
+          <div class="zigzag__content reveal--left">
+            <div class="section-badge"><i class="ri-compass-line"></i> Our Genesis</div>
+            <h2 style="text-align: start;">FROM RACE TELEMETRY TO SHOWROOM SUPREMACY</h2>
+            <p>APEX MOTORS was established in 2008 by two former World Superbike race engineers who shared a single vision: bringing factory-level racing technology, tuning, and customer care to street riders and track enthusiasts alike.</p>
+            <p>Our 25,000 sq. ft. flagship facility houses an architectural showroom, a state-of-the-art Superflow dyno bay, a custom composite bodywork lab, and an executive VIP customer lounge.</p>
+            
+            <div class="grid grid-2" style="margin-block-start: var(--space-6); gap: var(--space-4);">
+              <div class="card" style="align-items: flex-start; text-align: start; padding: var(--space-5);">
+                <i class="ri-eye-line" style="font-size: 1.5rem; color: var(--color-secondary); margin-block-end: var(--space-2);"></i>
+                <h4 style="font-size: var(--size-body);">Our Vision</h4>
+                <p style="font-size: var(--size-caption);">To redefine luxury motorcycle ownership through extreme technical transparency and uncompromised safety standards.</p>
+              </div>
+
+              <div class="card" style="align-items: flex-start; text-align: start; padding: var(--space-5);">
+                <i class="ri-target-line" style="font-size: 1.5rem; color: var(--color-accent); margin-block-end: var(--space-2);"></i>
+                <h4 style="font-size: var(--size-body);">Our Mission</h4>
+                <p style="font-size: var(--size-caption);">Empower riders with high-performance machines, race-calibrated dyno tuning, and unforgettable track day experiences.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="zigzag__image reveal--right">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1000&q=80" alt="APEX MOTORS Showroom Facility" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: MILESTONES TIMELINE -->
+    <section class="section" style="background: var(--color-surface-alt);">
+      <div class="container container--narrow">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-history-line"></i> Journey & Growth</div>
+          <h2>OUR HISTORICAL MILESTONES</h2>
+          <p>Over 18 years of relentless pursuit of motorcycling perfection.</p>
+        </div>
+
+        <div class="timeline reveal">
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2008</div>
+            <h3 class="timeline__title">Founded in Motor City</h3>
+            <p class="timeline__text">Started as a boutique 2-bay race tuning shop catering exclusively to amateur road racers.</p>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2014</div>
+            <h3 class="timeline__title">Official Dealership License</h3>
+            <p class="timeline__text">Secured official distribution rights for flagship European & Japanese motorcycle manufacturers.</p>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2019</div>
+            <h3 class="timeline__title">Superflow Dyno Lab Launch</h3>
+            <p class="timeline__text">Installed our custom All-Wheel Superflow Dyno test cell with climate & humidity simulation controls.</p>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2023</div>
+            <h3 class="timeline__title">Track Rental Academy</h3>
+            <p class="timeline__text">Launched our turn-key Track Day rental fleet and VIP 1-on-1 race coaching program.</p>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__dot"></div>
+            <div class="timeline__date">2026</div>
+            <h3 class="timeline__title">Electric Hyperbike Division</h3>
+            <p class="timeline__text">Unveiled our next-gen electric hyperbike customization lab and fast-charge network partnership.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: LEADERSHIP & ENGINEERING TEAM -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-user-star-line"></i> The Craftsmen</div>
+          <h2>MEET OUR EXPERT TEAM</h2>
+          <p>World-class engineers, telemetry specialists, and custom builders.</p>
+        </div>
+
+        <div class="grid grid-4 stagger-grid">
+          <!-- Member 1 -->
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80" alt="Marco Rossi" class="team-card__img">
+            <h4>Marco Rossi</h4>
+            <span>Founder & Chief Engineer</span>
+            <p>Former Ducati Corse telemetry specialist with 20+ years of MotoGP & WSBK tuning experience.</p>
+            <div class="team-card__social">
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 2 -->
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=300&q=80" alt="Dr. Sarah Jenkins" class="team-card__img">
+            <h4>Dr. Sarah Jenkins</h4>
+            <span>Aerodynamics & ECU Director</span>
+            <p>Ph.D. in Aerospace Engineering; specializes in CFD carbon winglet design and custom ECU mapping.</p>
+            <div class="team-card__social">
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 3 -->
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=300&q=80" alt="Kenji Takahashi" class="team-card__img">
+            <h4>Kenji Takahashi</h4>
+            <span>Master Chassis Builder</span>
+            <p>30 years crafting custom titanium frames, swingarm modifications, and Öhlins suspension setups.</p>
+            <div class="team-card__social">
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            </div>
+          </div>
+
+          <!-- Member 4 -->
+          <div class="team-card">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80" alt="Amara Okafor" class="team-card__img">
+            <h4>Amara Okafor</h4>
+            <span>Head of Track Operations</span>
+            <p>Licensed MotoAmerica competitor managing VIP track rental logistics, safety protocols, and rider coaching.</p>
+            <div class="team-card__social">
+              <a href="#" aria-label="LinkedIn"><i class="ri-linkedin-fill"></i></a>
+              <a href="#" aria-label="Twitter"><i class="ri-twitter-x-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CTA BANNER -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>JOIN THE APEX MOTORING LEGACY</h2>
+        <p>Visit our showroom today or schedule a private engineering consultation with Marco & Sarah.</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="contact.html" class="btn btn--primary btn--lg">Book Showroom Visit</a>
+          <a href="services.html" class="btn btn--secondary btn--lg" style="color: #fff; border-color: rgba(255,255,255,0.3);">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon"><i class="ri-motorbike-line"></i></div>
+            <span>APEX MOTORS</span>
+          </a>
+          <p>The definitive luxury motorcycle showroom and high-performance workshop. Engineering thrill since 2008.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter X"><i class="ri-twitter-x-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2 (Alternate)</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About APEX</a></li>
+            <li><a href="blog.html">News & Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Member Login</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Upcoming Models</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to receive exclusive track-day invitations & early vehicle drop alerts.</p>
+          <form class="footer__newsletter" data-validate="false">
+            <input type="email" class="form-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn--primary" aria-label="Subscribe"><i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 APEX MOTORS Showroom Inc. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="404.html">404 Demo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

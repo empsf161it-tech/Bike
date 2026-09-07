@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing — APEX MOTORS</title>
+  <meta name="description" content="Explore our premium motorcycle sales, track rentals, master workshop tuning packages, and transparent pricing.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────── -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+
+      <nav class="navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="home2.html" class="navbar__link">Home 2</a>
+        <a href="services.html" class="navbar__link active">Services</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="blog.html" class="navbar__link">Blog</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL Mode">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+        <a href="login.html" class="navbar__login-btn">Login</a>
+        
+        <button class="navbar__hamburger" aria-label="Open Navigation Drawer" aria-expanded="false">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MOBILE DRAWER ─────────────────────────────────── -->
+  <div class="drawer-overlay"></div>
+  <aside class="drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer__header">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+      <button class="drawer__close" aria-label="Close Drawer">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="drawer__links">
+      <a href="index.html" class="drawer__link"><i class="ri-home-4-line"></i> Home</a>
+      <a href="home2.html" class="drawer__link"><i class="ri-layout-grid-line"></i> Home 2</a>
+      <a href="services.html" class="drawer__link active"><i class="ri-tools-line"></i> Services</a>
+      <a href="about.html" class="drawer__link"><i class="ri-information-line"></i> About</a>
+      <a href="blog.html" class="drawer__link"><i class="ri-article-line"></i> Blog</a>
+      <a href="contact.html" class="drawer__link"><i class="ri-contacts-line"></i> Contact</a>
+    </div>
+
+    <div class="drawer__footer">
+      <div class="drawer__toggles">
+        <button class="btn btn--secondary btn--full" data-theme-toggle>
+          <i class="ri-sun-line"></i> Toggle Theme
+        </button>
+        <button class="btn btn--secondary btn--icon" data-rtl-toggle aria-label="Toggle RTL">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn--primary btn--full">Login</a>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+  <main>
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="section hero--centered" style="padding-block-start: calc(var(--navbar-height) + var(--space-5)); padding-block-end: var(--space-4); background: linear-gradient(to bottom, var(--color-surface), var(--color-bg));">
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge"><i class="ri-settings-4-line"></i> Comprehensive Solutions</div>
+          <h1 class="hero__title">OUR SERVICES & <span>TRANSPARENT PRICING</span></h1>
+          <p class="hero__subtitle">Whether you're acquiring a flagship superbike, servicing your engine, or gearing up for a weekend track experience, we provide end-to-end luxury solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SERVICE CARDS GRID -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-checkbox-multiple-line"></i> What We Do</div>
+          <h2>EXPERT MOTORCYCLE SERVICES</h2>
+          <p>Delivered by factory-trained technicians and experienced motorcycle enthusiasts.</p>
+        </div>
+
+        <div class="grid grid-3 stagger-grid">
+          <div class="card">
+            <div class="card__icon"><i class="ri-motorbike-line"></i></div>
+            <h3 class="card__title">Sales & Concierge</h3>
+            <p class="card__text">New & certified pre-owned superbike sales with nationwide enclosed white-glove transport and factory warranty setup.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon card__icon--accent"><i class="ri-timer-flash-line"></i></div>
+            <h3 class="card__title">Dyno Calibration</h3>
+            <p class="card__text">Superflow dyno testing, electronic fuel injection tuning, ECU remapping, and quickshifter/auto-blipper setup.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon"><i class="ri-riding-line"></i></div>
+            <h3 class="card__title">Track Rental Fleet</h3>
+            <p class="card__text">Rent race-prepped Ducati Panigales or Yamaha R1s complete with heated slick tires, mechanics, and track pit setup.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon card__icon--accent"><i class="ri-tools-fill"></i></div>
+            <h3 class="card__title">Full Maintenance</h3>
+            <p class="card__text">Desmo valve adjustments, fluid flushes, chain/sprocket replacement, brake bleeding, and comprehensive safety checks.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon"><i class="ri-palette-line"></i></div>
+            <h3 class="card__title">Custom Paint & Livery</h3>
+            <p class="card__text">Custom carbon fiber bodywork, airbrushed race liveries, ceramic coating protection, and custom upholstery.</p>
+          </div>
+
+          <div class="card">
+            <div class="card__icon card__icon--accent"><i class="ri-shield-user-line"></i></div>
+            <h3 class="card__title">VIP Rider Academy</h3>
+            <p class="card__text">1-on-1 coaching sessions with ex-MotoGP and MotoAmerica racers on private circuits with telemetry data logging.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: PRICING TABLE -->
+    <section class="section" style="background: var(--color-surface-alt);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-price-tag-3-line"></i> Transparent Packages</div>
+          <h2>SERVICE & RENTAL PRICING</h2>
+          <p>Choose the service package that fits your riding goals. No hidden fees.</p>
+        </div>
+
+        <div class="grid grid-3 stagger-grid">
+          <!-- Plan 1 -->
+          <div class="pricing-card">
+            <div class="pricing-card__name">Standard Service</div>
+            <div class="pricing-card__price">$299 <span>/ visit</span></div>
+            <p class="pricing-card__desc">Ideal for annual maintenance and pre-season checkups.</p>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> 50-Point Safety Inspection</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Full Synthetic Oil & Filter Change</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Chain Cleaning & Tensioning</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Brake Fluid & Pad Inspection</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Battery & ECU Diagnostic Scan</div>
+            </div>
+            <a href="contact.html" class="btn btn--secondary">Book Standard Service</a>
+          </div>
+
+          <!-- Plan 2 (Featured) -->
+          <div class="pricing-card pricing-card--featured">
+            <div class="pricing-card__name">Track Day Package</div>
+            <div class="pricing-card__price">$850 <span>/ day</span></div>
+            <p class="pricing-card__desc">Complete race-ready rental experience for track days.</p>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Panigale V4 or R1 Track Motorcycle</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Pirelli Supercorsa Slick Tires & Warmers</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Dedicated Pit Mechanic & Fuel Included</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Dainese Suit & AGV Helmet Fitting</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Telemetry Data Analysis Session</div>
+            </div>
+            <a href="contact.html" class="btn btn--primary">Reserve Track Package</a>
+          </div>
+
+          <!-- Plan 3 -->
+          <div class="pricing-card">
+            <div class="pricing-card__name">Dyno & Custom Tune</div>
+            <div class="pricing-card__price">$599 <span>/ session</span></div>
+            <p class="pricing-card__desc">For riders seeking maximum horsepower & smooth delivery.</p>
+            <div class="pricing-card__features">
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> 3-Hour Superflow Dyno Session</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Custom ECU Fuel & Ignition Remap</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Printout Dyno Chart (HP & Torque)</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Throttle Response & Quickshifter Tune</div>
+              <div class="pricing-card__feature"><i class="ri-check-line"></i> Speed & Rev Limiter Adjustments</div>
+            </div>
+            <a href="contact.html" class="btn btn--secondary">Book Dyno Tune</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PROCESS / HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-node-tree"></i> Step-by-Step</div>
+          <h2>HOW OUR PROCESS WORKS</h2>
+          <p>Simple, transparent, and hassle-free from booking to handover.</p>
+        </div>
+
+        <div class="grid grid-4 stagger-grid">
+          <div class="process-step">
+            <div class="process-step__number">01</div>
+            <h4>Consultation & Selection</h4>
+            <p>Schedule a visit or submit a request online. Our specialist discusses your riding profile, budget, or service needs.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">02</div>
+            <h4>Inspection & Diagnostic</h4>
+            <p>We perform full diagnostic scans, suspension measurements, and mechanical checks before commencing any work.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">03</div>
+            <h4>Precision Execution</h4>
+            <p>Certified engineers install OEM or performance parts, complete custom fabrication, or prep your bike on the dyno.</p>
+          </div>
+
+          <div class="process-step">
+            <div class="process-step__number">04</div>
+            <h4>Road Test & Handover</h4>
+            <p>Final high-speed test run by a senior technician followed by white-glove delivery or showroom pickup.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: FAQ ACCORDION -->
+    <section class="section" style="background: var(--color-surface-alt);">
+      <div class="container container--narrow">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-questionnaire-line"></i> Got Questions?</div>
+          <h2>FREQUENTLY ASKED QUESTIONS</h2>
+          <p>Find answers to common questions about motorcycle purchases, servicing, and track rentals.</p>
+        </div>
+
+        <div class="accordion reveal">
+          <div class="accordion__item active">
+            <button class="accordion__header">
+              <span>Do you offer nationwide delivery for motorcycle purchases?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="accordion__body" style="max-height: 200px;">
+              <div class="accordion__content">
+                Yes! We offer nationwide enclosed white-glove transport in custom climate-controlled trailers. Your motorcycle arrives fully detailed, prepped, and ready to ride with all paperwork in hand.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>What gear is required for track day rentals?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="accordion__body">
+              <div class="accordion__content">
+                We provide full Dainese 1-piece leather suits, AGV ECE 22.06 certified helmets, gauntlet gloves, and track boots. If you prefer using your own gear, our pit crew will inspect it to ensure track compliance.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>Does ECU remapping void my factory warranty?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="accordion__body">
+              <div class="accordion__content">
+                We partner with authorized manufacturer performance programs (such as UpMap and Akrapovič official factory maps) that maintain your full warranty coverage. Our team will advise on warranty compliance before any remapping.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>How do I schedule a dyno calibration session?</span>
+              <i class="ri-arrow-down-s-line"></i>
+            </button>
+            <div class="accordion__body">
+              <div class="accordion__content">
+                You can book directly through our Contact page or call our workshop at +1-800-555-APEX. Dyno sessions typically take 3 to 4 hours, and you are welcome to observe from our customer viewing lounge.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CTA BANNER -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>NEED A CUSTOM SERVICE QUOTE?</h2>
+        <p>Contact our master technicians today for personalized tuning, custom paint options, or fleet rentals.</p>
+        <a href="contact.html" class="btn btn--primary btn--lg">Get Custom Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon"><i class="ri-motorbike-line"></i></div>
+            <span>APEX MOTORS</span>
+          </a>
+          <p>The definitive luxury motorcycle showroom and high-performance workshop. Engineering thrill since 2008.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter X"><i class="ri-twitter-x-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2 (Alternate)</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About APEX</a></li>
+            <li><a href="blog.html">News & Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Member Login</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Upcoming Models</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to receive exclusive track-day invitations & early vehicle drop alerts.</p>
+          <form class="footer__newsletter" data-validate="false">
+            <input type="email" class="form-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn--primary" aria-label="Subscribe"><i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 APEX MOTORS Showroom Inc. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="404.html">404 Demo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

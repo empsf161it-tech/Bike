@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX MOTORS — Luxury & High-Performance Motorcycle Showroom</title>
+  <meta name="description" content="Experience unparalleled thrill and sophistication at APEX MOTORS. Premium motorcycles, custom builds, professional maintenance, and rentals.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+  
+  <!-- Remix Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <!-- GSAP CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  
+  <!-- Main Script -->
+  <script src="assets/js/main.js" defer></script>
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutoDealer",
+    "name": "APEX MOTORS",
+    "image": "https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1200&q=80",
+    "description": "Luxury & High-Performance Motorcycle Showroom",
+    "priceRange": "$$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "100 High-Speed Boulevard",
+      "addressLocality": "Motor City",
+      "addressRegion": "CA",
+      "postalCode": "90210",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-800-555-APEX"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────── -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+
+      <nav class="navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="navbar__link active">Home</a>
+        <a href="home2.html" class="navbar__link">Home 2</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="blog.html" class="navbar__link">Blog</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL Mode">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+        <a href="login.html" class="navbar__login-btn">Login</a>
+        
+        <button class="navbar__hamburger" aria-label="Open Navigation Drawer" aria-expanded="false">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MOBILE DRAWER ─────────────────────────────────── -->
+  <div class="drawer-overlay"></div>
+  <aside class="drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer__header">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+      <button class="drawer__close" aria-label="Close Drawer">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="drawer__links">
+      <a href="index.html" class="drawer__link active"><i class="ri-home-4-line"></i> Home</a>
+      <a href="home2.html" class="drawer__link"><i class="ri-layout-grid-line"></i> Home 2</a>
+      <a href="services.html" class="drawer__link"><i class="ri-tools-line"></i> Services</a>
+      <a href="about.html" class="drawer__link"><i class="ri-information-line"></i> About</a>
+      <a href="blog.html" class="drawer__link"><i class="ri-article-line"></i> Blog</a>
+      <a href="contact.html" class="drawer__link"><i class="ri-contacts-line"></i> Contact</a>
+    </div>
+
+    <div class="drawer__footer">
+      <div class="drawer__toggles">
+        <button class="btn btn--secondary btn--full" data-theme-toggle>
+          <i class="ri-sun-line"></i> Toggle Theme
+        </button>
+        <button class="btn btn--secondary btn--icon" data-rtl-toggle aria-label="Toggle RTL">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn--primary btn--full">Login</a>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+  <main>
+    <!-- SECTION 1: HERO (Full-Screen) -->
+    <section class="hero section--full">
+      <div class="hero__bg">
+        <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=1920&q=80" alt="Apex Superbike Showroom" loading="eager">
+      </div>
+      
+      <div class="floating-shapes">
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+        <div class="floating-shape"></div>
+      </div>
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge">
+            <i class="ri-flashlight-line"></i> Next-Generation Hyperbikes
+          </div>
+          <h1 class="hero__title">ENGINEERED FOR THE <span>UNTAGGED THRILL</span></h1>
+          <p class="hero__subtitle">Discover the pinnacle of Italian & Japanese motorcycle engineering. Exceptional speed, uncompromising safety, and custom craftsmanship built for true riders.</p>
+          
+          <div class="hero__actions">
+            <a href="services.html" class="btn btn--primary btn--lg">
+              Explore Showroom <i class="ri-arrow-right-line"></i>
+            </a>
+            <a href="contact.html" class="btn btn--secondary btn--lg">
+              <i class="ri-steering-2-line"></i> Book a Test Ride
+            </a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="320" data-count-suffix=" KM/H">0 KM/H</span>
+              <span class="hero__stat-label">Top Velocity</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="215" data-count-suffix=" HP">0 HP</span>
+              <span class="hero__stat-label">Peak Horsepower</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-number" data-count="14800" data-count-suffix="+">0+</span>
+              <span class="hero__stat-label">Satisfied Riders</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: SERVICES SHOWCASE (Full-Screen Feel) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-service-line"></i> Premier Capabilities</div>
+          <h2>WORLD-CLASS MOTORCYCLE SERVICES</h2>
+          <p>From high-speed superbike sales to bespoke performance tuning and official track-day rentals, we cater to every motorcycling passion.</p>
+        </div>
+
+        <div class="grid grid-3 stagger-grid">
+          <!-- Service Card 1 -->
+          <div class="card">
+            <div class="card__icon"><i class="ri-shopping-bag-3-line"></i></div>
+            <h3 class="card__title">Superbike Showroom</h3>
+            <p class="card__text">Explore our curated collection of factory-new and certified pre-owned flagship sportbikes, cruisers, and adventure tourers.</p>
+          </div>
+
+          <!-- Service Card 2 -->
+          <div class="card">
+            <div class="card__icon card__icon--accent"><i class="ri-shield-keyhole-line"></i></div>
+            <h3 class="card__title">Performance Rentals</h3>
+            <p class="card__text">Rent elite motorcycles for weekend coastal getaways or track days with full insurance and riding gear packages included.</p>
+          </div>
+
+          <!-- Service Card 3 -->
+          <div class="card">
+            <div class="card__icon"><i class="ri-tools-fill"></i></div>
+            <h3 class="card__title">Master Mechanics</h3>
+            <p class="card__text">Precision maintenance, ECU remapping, suspension tuning, and dyno diagnostic testing performed by certified race engineers.</p>
+          </div>
+
+          <!-- Service Card 4 -->
+          <div class="card">
+            <div class="card__icon card__icon--accent"><i class="ri-paint-brush-line"></i></div>
+            <h3 class="card__title">Bespoke Customization</h3>
+            <p class="card__text">Transform your machine with custom carbon fiber fairings, Akrapovič exhaust systems, and hand-stitched leather saddles.</p>
+          </div>
+
+          <!-- Service Card 5 -->
+          <div class="card">
+            <div class="card__icon"><i class="ri-safe-2-line"></i></div>
+            <h3 class="card__title">Rider Protection & Gear</h3>
+            <p class="card__text">Premium helmet fittings, Dainese leather suits, Bluetooth intercom systems, and airbag safety vests for max protection.</p>
+          </div>
+
+          <!-- Service Card 6 -->
+          <div class="card">
+            <div class="card__icon card__icon--accent"><i class="ri-bank-card-line"></i></div>
+            <h3 class="card__title">Flexible Financing</h3>
+            <p class="card__text">Tailored financing plans with low interest rates, instant approval, and trade-in options to get you on the road today.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ABOUT / CRAFTSMANSHIP (Full-Screen Split Visual) -->
+    <section class="section" style="background: var(--color-surface-alt);">
+      <div class="container">
+        <div class="zigzag">
+          <div class="zigzag__content reveal--left">
+            <div class="section-badge"><i class="ri-history-line"></i> Our Legacy</div>
+            <h2 style="text-align: start;">CRAFTED FOR SPEED. DRIVEN BY PASSION.</h2>
+            <p>Founded in 2008 by former MotoGP telemetry engineers, APEX MOTORS has evolved from a boutique race-tuning shop into a premier destination for motorcycle enthusiasts across the globe.</p>
+            <p>Every motorcycle that crosses our showroom floor undergoes a meticulous 150-point safety inspection and performance calibration to guarantee flawless dynamics on highway curves and circuit turns alike.</p>
+            <div class="flex gap-4" style="margin-block-start: var(--space-6);">
+              <a href="about.html" class="btn btn--primary">Discover Our Story</a>
+              <a href="contact.html" class="btn btn--secondary">Visit Showroom</a>
+            </div>
+          </div>
+          
+          <div class="zigzag__image reveal--right">
+            <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=1000&q=80" alt="Superbike Mechanic Calibration" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: PERFORMANCE HIGHLIGHTS (Icon & Feature Grid) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-cpu-line"></i> Technical Supremacy</div>
+          <h2>ENGINEERED WITH ZERO COMPROMISE</h2>
+          <p>Explore the cutting-edge innovations standard in our flagship motorcycle inventory.</p>
+        </div>
+
+        <div class="grid grid-4 stagger-grid">
+          <div class="feature-item">
+            <div class="feature-item__icon"><i class="ri-speed-up-line"></i></div>
+            <h4>V4 Engine Architecture</h4>
+            <p>90° V4 engines producing up to 215 hp with desmodromic valve timing for instant throttle response.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon"><i class="ri-sensor-line"></i></div>
+            <h4>6-Axis IMU Electronics</h4>
+            <p>Cornering ABS, lean-angle sensitive traction control, slide control, and wheelie mitigation algorithms.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon"><i class="ri-windy-line"></i></div>
+            <h4>Aerodynamic Winglets</h4>
+            <p>Carbon fiber winglets generating 30kg of downforce at 270 km/h for high-speed stability.</p>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-item__icon"><i class="ri-shield-flash-line"></i></div>
+            <h4>Brembo Stylema Brakes</h4>
+            <p>Monobloc calipers paired with 330mm semi-floating discs for extraordinary stopping power.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: TESTIMONIALS (Carousel) -->
+    <section class="section" style="background: var(--color-surface);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-chat-quote-line"></i> Rider Opinions</div>
+          <h2>WHAT OUR RIDER COMMUNITY SAYS</h2>
+          <p>Hear from track day regulars, long-distance touring legends, and custom bike collectors.</p>
+        </div>
+
+        <div class="testimonials-carousel reveal">
+          <div class="testimonials-track">
+            <!-- Slide 1 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">
+                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial-card__text">"Purchasing my Panigale V4 S from APEX MOTORS was an unforgettable experience. Their dyno calibration gave me an extra 8 hp at the rear wheel!"</p>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" alt="Elena Rostova">
+                <div class="testimonial-card__info">
+                  <h4>Elena Rostova</h4>
+                  <span>Track Day Enthusiast</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">
+                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial-card__text">"The weekend rental process was seamless. I picked up a BMW R1250 GS for a Pacific Coast Highway tour. Immaculate condition and flawless service!"</p>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" alt="Marcus Vance">
+                <div class="testimonial-card__info">
+                  <h4>Marcus Vance</h4>
+                  <span>Adventure Tourer</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card">
+              <div class="testimonial-card__stars">
+                <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+              </div>
+              <p class="testimonial-card__text">"Their custom exhaust work and paint shop turned my cafe racer concept into a museum-piece reality. Hands down the best shop in California."</p>
+              <div class="testimonial-card__author">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80" alt="Julian Thorne">
+                <div class="testimonial-card__info">
+                  <h4>Julian Thorne</h4>
+                  <span>Custom Motorcycle Collector</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn carousel-btn--prev" aria-label="Previous Testimonial"><i class="ri-arrow-left-s-line"></i></button>
+          <div class="carousel-dots"></div>
+          <button class="carousel-btn carousel-btn--next" aria-label="Next Testimonial"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: CTA (Full-Width High-Impact Banner) -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>READY TO FEEL THE THRILL?</h2>
+        <p>Book your personalized showroom appointment or schedule a 45-minute test ride with our master technicians today.</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="contact.html" class="btn btn--primary btn--lg">Book Test Ride Now</a>
+          <a href="services.html" class="btn btn--secondary btn--lg" style="color: #fff; border-color: rgba(255,255,255,0.3);">Browse Pricing</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon"><i class="ri-motorbike-line"></i></div>
+            <span>APEX MOTORS</span>
+          </a>
+          <p>The definitive luxury motorcycle showroom and high-performance workshop. Engineering thrill since 2008.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter X"><i class="ri-twitter-x-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2 (Alternate)</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About APEX</a></li>
+            <li><a href="blog.html">News & Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Member Login</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Upcoming Models</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to receive exclusive track-day invitations & early vehicle drop alerts.</p>
+          <form class="footer__newsletter" data-validate="false">
+            <input type="email" class="form-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn--primary" aria-label="Subscribe"><i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 APEX MOTORS Showroom Inc. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="404.html">404 Demo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

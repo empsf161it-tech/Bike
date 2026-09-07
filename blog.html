@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal & News — APEX MOTORS</title>
+  <meta name="description" content="Read the latest motorcycle reviews, MotoGP telemetry breakdowns, track day guides, and custom bike showcases.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────── -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+
+      <nav class="navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="home2.html" class="navbar__link">Home 2</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="blog.html" class="navbar__link active">Blog</a>
+        <a href="contact.html" class="navbar__link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL Mode">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+        <a href="login.html" class="navbar__login-btn">Login</a>
+        
+        <button class="navbar__hamburger" aria-label="Open Navigation Drawer" aria-expanded="false">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MOBILE DRAWER ─────────────────────────────────── -->
+  <div class="drawer-overlay"></div>
+  <aside class="drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer__header">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+      <button class="drawer__close" aria-label="Close Drawer">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="drawer__links">
+      <a href="index.html" class="drawer__link"><i class="ri-home-4-line"></i> Home</a>
+      <a href="home2.html" class="drawer__link"><i class="ri-layout-grid-line"></i> Home 2</a>
+      <a href="services.html" class="drawer__link"><i class="ri-tools-line"></i> Services</a>
+      <a href="about.html" class="drawer__link"><i class="ri-information-line"></i> About</a>
+      <a href="blog.html" class="drawer__link active"><i class="ri-article-line"></i> Blog</a>
+      <a href="contact.html" class="drawer__link"><i class="ri-contacts-line"></i> Contact</a>
+    </div>
+
+    <div class="drawer__footer">
+      <div class="drawer__toggles">
+        <button class="btn btn--secondary btn--full" data-theme-toggle>
+          <i class="ri-sun-line"></i> Toggle Theme
+        </button>
+        <button class="btn btn--secondary btn--icon" data-rtl-toggle aria-label="Toggle RTL">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn--primary btn--full">Login</a>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+  <main>
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="section hero--centered" style="padding-block-start: calc(var(--navbar-height) + var(--space-5)); padding-block-end: var(--space-4); background: linear-gradient(to bottom, var(--color-surface), var(--color-bg));">
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge"><i class="ri-newspaper-line"></i> The Apex Chronicle</div>
+          <h1 class="hero__title">HIGH-OCTANE JOURNAL & <span>RACE REVIEWS</span></h1>
+          <p class="hero__subtitle">Deep-dive technical reviews, ECU tuning breakdowns, track day advice, and exclusive interviews with racing icons.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: FEATURED ARTICLE HERO -->
+    <section class="section">
+      <div class="container">
+        <div class="card card--horizontal card--image reveal" style="background: var(--color-surface); padding: 0; border: 1px solid var(--color-border);">
+          <div style="flex: 1; overflow: hidden;">
+            <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?auto=format&fit=crop&w=800&q=80" alt="Panigale V4 S Telemetry" style="width: 100%; height: 100%; object-fit: cover; min-height: 320px;">
+          </div>
+          <div class="card__body" style="flex: 1; padding: var(--space-8);">
+            <div class="blog-card__meta">
+              <span class="blog-card__tag">TELEMETRY & TECH</span>
+              <span class="blog-card__date"><i class="ri-calendar-line"></i> Sept 02, 2026</span>
+            </div>
+            <h2 style="font-size: var(--size-h3); margin-block-end: var(--space-4); text-align: start;">
+              <a href="blog-single.html">ANALYZING THE 2026 DESMODROMIC V4 ENGINE MAPS ON THE DYNO</a>
+            </h2>
+            <p class="card__text" style="margin-block-end: var(--space-6);">We put the latest 2026 flagship superbike through 50 dyno runs to measure horsepower gains across Akrapovič full titanium systems versus stock setups.</p>
+            <div class="blog-card__author" style="width: 100%; justify-content: space-between;">
+              <div class="flex items-center gap-3">
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=100&q=80" alt="Marco Rossi">
+                <span class="blog-card__author-name">By Marco Rossi</span>
+              </div>
+              <a href="blog-single.html" class="btn btn--primary btn--sm">Read Full Story <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: ARTICLES GRID -->
+    <section class="section" style="background: var(--color-surface-alt);">
+      <div class="container">
+        <div class="section-header reveal">
+          <div class="section-badge"><i class="ri-article-line"></i> Latest Articles</div>
+          <h2>ALL CHRONICLE POSTS</h2>
+          <p>Filter by technical guides, track day tips, or new bike launches.</p>
+        </div>
+
+        <div class="grid grid-3 stagger-grid">
+          <!-- Article 1 -->
+          <article class="blog-card">
+            <div class="blog-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?auto=format&fit=crop&w=600&q=80" alt="Track Day Preparation" class="blog-card__img" loading="lazy">
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">TRACK DAYS</span>
+                <span class="blog-card__date">Aug 28, 2026</span>
+              </div>
+              <h3 class="blog-card__title"><a href="blog-single.html">10 ESSENTIAL TRACK DAY PREPARATION CHECKS FOR SUPERSPOK RIDERS</a></h3>
+              <p class="blog-card__excerpt">From tire pressure cold vs hot deltas to brake fluid boiling points, master the ultimate track preparation checklist before hitting Laguna Seca.</p>
+              <div class="blog-card__author">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=100&q=80" alt="Amara Okafor">
+                <span class="blog-card__author-name">By Amara Okafor</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="blog-card">
+            <div class="blog-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?auto=format&fit=crop&w=600&q=80" alt="Adventure Touring Setup" class="blog-card__img" loading="lazy">
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">TOURING & GEAR</span>
+                <span class="blog-card__date">Aug 22, 2026</span>
+              </div>
+              <h3 class="blog-card__title"><a href="blog-single.html">HOW TO RIG YOUR ADVENTURE BIKE FOR 5,000 MILES OF UNPAVED TERRAIN</a></h3>
+              <p class="blog-card__excerpt">Electronic suspension tuning, tubeless tire repair kits, and heavy-duty skid plates tested across the Mojave Desert.</p>
+              <div class="blog-card__author">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Marcus Vance">
+                <span class="blog-card__author-name">By Marcus Vance</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Article 3 -->
+          <article class="blog-card">
+            <div class="blog-card__img-wrap">
+              <img src="https://images.unsplash.com/photo-1609630875171-b1321377ee65?auto=format&fit=crop&w=600&q=80" alt="Custom Cafe Racer Build" class="blog-card__img" loading="lazy">
+            </div>
+            <div class="blog-card__body">
+              <div class="blog-card__meta">
+                <span class="blog-card__tag">CUSTOM BUILDS</span>
+                <span class="blog-card__date">Aug 15, 2026</span>
+              </div>
+              <h3 class="blog-card__title"><a href="blog-single.html">INSIDE THE ART OF HAND-FORMED ALUMINUM FUEL TANKS</a></h3>
+              <p class="blog-card__excerpt">Master metal fabricator Kenji Takahashi reveals the English wheel techniques used to shape classic cafe racer tanks from raw sheet metal.</p>
+              <div class="blog-card__author">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=100&q=80" alt="Kenji Takahashi">
+                <span class="blog-card__author-name">By Kenji Takahashi</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CTA / NEWSLETTER -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>NEVER MISS A TECHNICAL DEEP-DIVE</h2>
+        <p>Subscribe to the APEX Chronicle newsletter for weekly ECU telemetry guides and new inventory drops.</p>
+        <form class="coming-soon__form" data-validate="false">
+          <input type="email" class="form-input" placeholder="Enter your email address" required>
+          <button type="submit" class="btn btn--primary">Subscribe Free</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon"><i class="ri-motorbike-line"></i></div>
+            <span>APEX MOTORS</span>
+          </a>
+          <p>The definitive luxury motorcycle showroom and high-performance workshop. Engineering thrill since 2008.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter X"><i class="ri-twitter-x-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2 (Alternate)</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About APEX</a></li>
+            <li><a href="blog.html">News & Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Member Login</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Upcoming Models</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to receive exclusive track-day invitations & early vehicle drop alerts.</p>
+          <form class="footer__newsletter" data-validate="false">
+            <input type="email" class="form-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn--primary" aria-label="Subscribe"><i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 APEX MOTORS Showroom Inc. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="404.html">404 Demo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

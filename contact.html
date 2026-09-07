@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us & Test Ride — APEX MOTORS</title>
+  <meta name="description" content="Get in touch with APEX MOTORS motorcycle showroom. Schedule a test ride, request dyno tuning, or visit our Motor City showroom.">
+  
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏍️</text></svg>">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/rtl.css">
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ── NAVBAR ────────────────────────────────────────── -->
+  <header class="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+
+      <nav class="navbar__links" aria-label="Main Navigation">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="home2.html" class="navbar__link">Home 2</a>
+        <a href="services.html" class="navbar__link">Services</a>
+        <a href="about.html" class="navbar__link">About</a>
+        <a href="blog.html" class="navbar__link">Blog</a>
+        <a href="contact.html" class="navbar__link active">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle Theme">
+          <i class="ri-sun-line"></i>
+        </button>
+        <button class="navbar__toggle-btn" data-rtl-toggle aria-label="Toggle RTL Mode">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+        <a href="login.html" class="navbar__login-btn">Login</a>
+        
+        <button class="navbar__hamburger" aria-label="Open Navigation Drawer" aria-expanded="false">
+          <i class="ri-menu-3-line"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── MOBILE DRAWER ─────────────────────────────────── -->
+  <div class="drawer-overlay"></div>
+  <aside class="drawer" aria-label="Mobile Navigation Drawer">
+    <div class="drawer__header">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon"><i class="ri-motorbike-line"></i></div>
+        <span>APEX MOTORS</span>
+      </a>
+      <button class="drawer__close" aria-label="Close Drawer">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="drawer__links">
+      <a href="index.html" class="drawer__link"><i class="ri-home-4-line"></i> Home</a>
+      <a href="home2.html" class="drawer__link"><i class="ri-layout-grid-line"></i> Home 2</a>
+      <a href="services.html" class="drawer__link"><i class="ri-tools-line"></i> Services</a>
+      <a href="about.html" class="drawer__link"><i class="ri-information-line"></i> About</a>
+      <a href="blog.html" class="drawer__link"><i class="ri-article-line"></i> Blog</a>
+      <a href="contact.html" class="drawer__link active"><i class="ri-contacts-line"></i> Contact</a>
+    </div>
+
+    <div class="drawer__footer">
+      <div class="drawer__toggles">
+        <button class="btn btn--secondary btn--full" data-theme-toggle>
+          <i class="ri-sun-line"></i> Toggle Theme
+        </button>
+        <button class="btn btn--secondary btn--icon" data-rtl-toggle aria-label="Toggle RTL">
+          <i class="ri-arrow-left-right-line"></i>
+        </button>
+      </div>
+      <a href="login.html" class="btn btn--primary btn--full">Login</a>
+    </div>
+  </aside>
+
+  <!-- ── MAIN CONTENT ─────────────────────────────────── -->
+  <main>
+    <!-- SECTION 1: HERO BANNER -->
+    <section class="section hero--centered" style="padding-block-start: calc(var(--navbar-height) + var(--space-5)); padding-block-end: var(--space-4); background: linear-gradient(to bottom, var(--color-surface), var(--color-bg));">
+
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__badge"><i class="ri-customer-service-2-line"></i> Direct Connection</div>
+          <h1 class="hero__title">GET IN TOUCH WITH <span>OUR TEAM</span></h1>
+          <p class="hero__subtitle">Have questions about a motorcycle purchase, dyno calibration, or track rental? Reach out to our technical specialists.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: CONTACT INFO CARDS -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-4 stagger-grid">
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="ri-map-pin-line"></i></div>
+            <h4>Showroom Address</h4>
+            <p>100 High-Speed Boulevard<br>Motor City, CA 90210</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="ri-phone-line"></i></div>
+            <h4>Phone & Concierge</h4>
+            <p>Sales: +1 (800) 555-APEX<br>Service: +1 (800) 555-9988</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="ri-mail-line"></i></div>
+            <h4>Email Inquiry</h4>
+            <p>info@apexmotors.com<br>tuning@apexmotors.com</p>
+          </div>
+
+          <div class="contact-info-card">
+            <div class="contact-info-card__icon"><i class="ri-time-line"></i></div>
+            <h4>Showroom Hours</h4>
+            <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: By Appointment</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: CONTACT FORM & MAP SPLIT -->
+    <section class="section" style="background: var(--color-surface-alt);">
+      <div class="container">
+        <div class="grid grid-2" style="gap: var(--space-8); align-items: start;">
+          <!-- Contact Form -->
+          <div class="card reveal--left" style="align-items: flex-start; text-align: start; padding: var(--space-8);">
+            <h2 style="font-size: var(--size-h3); margin-block-end: var(--space-2); text-align: start;">SEND US A MESSAGE</h2>
+            <p class="card__text" style="margin-block-end: var(--space-6);">Fill out the form below and our team will get back to you within 2 business hours.</p>
+
+            <form style="width: 100%;" data-validate="true">
+              <div class="form-group">
+                <label class="form-label">Full Name <span class="required">*</span></label>
+                <input type="text" class="form-input" required placeholder="e.g. Alex Rossi" data-validate-type="name">
+                <span class="form-error">Please enter your name</span>
+              </div>
+
+              <div class="grid grid-2">
+                <div class="form-group">
+                  <label class="form-label">Email Address <span class="required">*</span></label>
+                  <input type="email" class="form-input" required placeholder="name@example.com" data-validate-type="email">
+                  <span class="form-error">Valid email required</span>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Phone Number</label>
+                  <input type="tel" class="form-input" placeholder="+1 (555) 000-0000">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Inquiry Subject <span class="required">*</span></label>
+                <select class="form-input" required style="cursor: pointer;">
+                  <option value="test-ride">Schedule a Test Ride</option>
+                  <option value="purchase">New / Pre-Owned Bike Purchase</option>
+                  <option value="dyno">Dyno Calibration & Service</option>
+                  <option value="track-rental">Track Day Rental Package</option>
+                  <option value="other">General Inquiry</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Your Message <span class="required">*</span></label>
+                <textarea class="form-input" required placeholder="Tell us how we can assist you..."></textarea>
+                <span class="form-error">Message field cannot be empty</span>
+              </div>
+
+              <div class="form-success-msg">
+                Thank you! Your message has been sent successfully. We will contact you shortly.
+              </div>
+
+              <button type="submit" class="btn btn--primary btn--lg btn--full" style="margin-block-start: var(--space-4);">
+                Submit Message <i class="ri-send-plane-line"></i>
+              </button>
+            </form>
+          </div>
+
+          <!-- Interactive Map Container -->
+          <div class="reveal--right">
+            <div class="section-header" style="text-align: start; margin-block-end: var(--space-5);">
+              <div class="section-badge"><i class="ri-navigation-line"></i> Location Map</div>
+              <h3 style="font-size: var(--size-h3); text-align: start;">VISIT OUR FLAGSHIP SHOWROOM</h3>
+              <p style="margin-inline: 0;">Located in the heart of Motor City with ample parking for motorcycle trailers.</p>
+            </div>
+
+            <div class="map-container">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.7152203584424!2d-118.40035632349791!3d34.06334781711736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bc04d6d147ab%3A0xd6c7c379fd081ed1!2sBeverly%20Hills%2C%20CA%2090210!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="APEX MOTORS Location Map">
+              </iframe>
+            </div>
+
+            <div class="card" style="margin-block-start: var(--space-6); align-items: flex-start; text-align: start; padding: var(--space-5);">
+              <div class="flex items-center gap-3">
+                <i class="ri-car-line" style="font-size: 1.5rem; color: var(--color-secondary);"></i>
+                <div>
+                  <h4 style="font-size: var(--size-body);">Showroom Trailer Parking</h4>
+                  <p class="caption">Dedicated 80ft bays available for enclosed motorcycle transport trailers.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: CTA BANNER -->
+    <section class="cta-section">
+      <div class="container">
+        <h2>PREFER A DIRECT PHONE CALL?</h2>
+        <p>Our sales team is standing by to take your call during business hours.</p>
+        <a href="tel:+18005552739" class="btn btn--primary btn--lg"><i class="ri-phone-fill"></i> Call +1 (800) 555-APEX</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ── FOOTER ───────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="index.html" class="footer__logo">
+            <div class="footer__logo-icon"><i class="ri-motorbike-line"></i></div>
+            <span>APEX MOTORS</span>
+          </a>
+          <p>The definitive luxury motorcycle showroom and high-performance workshop. Engineering thrill since 2008.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="YouTube"><i class="ri-youtube-line"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter X"><i class="ri-twitter-x-line"></i></a>
+          </div>
+        </div>
+
+        <div class="footer__column">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="home2.html">Home 2 (Alternate)</a></li>
+            <li><a href="services.html">Services & Pricing</a></li>
+            <li><a href="about.html">About APEX</a></li>
+            <li><a href="blog.html">News & Journal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="login.html">Member Login</a></li>
+            <li><a href="register.html">Create Account</a></li>
+            <li><a href="coming-soon.html">Upcoming Models</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__column">
+          <h4>Stay Updated</h4>
+          <p>Subscribe to receive exclusive track-day invitations & early vehicle drop alerts.</p>
+          <form class="footer__newsletter" data-validate="false">
+            <input type="email" class="form-input" placeholder="Enter your email" required>
+            <button type="submit" class="btn btn--primary" aria-label="Subscribe"><i class="ri-send-plane-fill"></i></button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 APEX MOTORS Showroom Inc. All rights reserved.</p>
+        <div class="footer__bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="404.html">404 Demo</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

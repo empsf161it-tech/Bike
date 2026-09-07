@@ -1,0 +1,122 @@
+/* ============================================================
+   BIKE STORE — RTL Overrides
+   Applied when dir="rtl" on <html> or .rtl on <body>
+   ============================================================ */
+
+/* Drawer slides from LEFT in RTL */
+[dir="rtl"] .drawer {
+  inset-inline-end: auto;
+  inset-inline-start: 0;
+  transform: translateX(-100%);
+}
+
+[dir="rtl"] .drawer.active {
+  transform: translateX(0);
+}
+
+/* Navbar adjustments */
+[dir="rtl"] .navbar__link.active::after {
+  inset-inline-start: var(--space-4);
+  inset-inline-end: var(--space-4);
+}
+
+/* Timeline */
+[dir="rtl"] .timeline {
+  padding-inline-start: 0;
+  padding-inline-end: var(--space-8);
+}
+
+[dir="rtl"] .timeline::before {
+  inset-inline-start: auto;
+  inset-inline-end: 16px;
+}
+
+[dir="rtl"] .timeline__dot {
+  inset-inline-start: auto;
+  inset-inline-end: calc(-1 * var(--space-8) + 8px);
+}
+
+/* Blog single blockquote */
+[dir="rtl"] .blog-single__content blockquote {
+  border-inline-start: none;
+  border-inline-end: 4px solid var(--color-secondary);
+  border-radius: var(--radius) 0 0 var(--radius);
+}
+
+/* Dashboard sidebar */
+[dir="rtl"] .dashboard__sidebar {
+  inset-inline-start: auto;
+  inset-inline-end: 0;
+  border-inline-end: none;
+  border-inline-start: 1px solid var(--color-border);
+}
+
+[dir="rtl"] .dashboard__main {
+  margin-inline-start: 0;
+  margin-inline-end: 280px;
+}
+
+@media (max-width: 1024px) {
+  [dir="rtl"] .dashboard__main {
+    margin-inline-end: 0;
+  }
+}
+
+/* Text alignment corrections */
+[dir="rtl"] .card--horizontal {
+  text-align: start;
+}
+
+[dir="rtl"] .card--image .card__body {
+  text-align: start;
+}
+
+/* Zigzag override — disable the direction trick in RTL */
+[dir="rtl"] .zigzag:nth-child(even) {
+  direction: rtl;
+}
+
+[dir="rtl"] .zigzag:nth-child(odd) {
+  direction: rtl;
+}
+
+/* Carousel controls */
+[dir="rtl"] .carousel-btn .ri-arrow-left-s-line {
+  transform: scaleX(-1);
+}
+
+[dir="rtl"] .carousel-btn .ri-arrow-right-s-line {
+  transform: scaleX(-1);
+}
+
+/* Form check alignment */
+[dir="rtl"] .form-check {
+  flex-direction: row;
+}
+
+/* Hero stat text */
+[dir="rtl"] .hero__stat {
+  text-align: start;
+}
+
+/* Footer columns for RTL */
+[dir="rtl"] .footer__column ul {
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  [dir="rtl"] .footer__column ul {
+    align-items: center;
+  }
+}
+
+/* Accordion icon flip */
+[dir="rtl"] .accordion__header {
+  text-align: start;
+}
+
+/* Process step connector — flip if needed */
+[dir="rtl"] .process-step::after {
+  inset-inline-start: auto;
+  inset-inline-end: 100%;
+}
