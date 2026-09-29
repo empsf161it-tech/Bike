@@ -15,12 +15,19 @@
 </head>
 <body class="auth-page">
 
+  <!-- Theme Toggle -->
+  <div style="position: absolute; top: var(--space-4); right: var(--space-4); z-index: 10;">
+    <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle Theme" style="background: var(--color-surface); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); cursor: pointer;">
+      <i class="ri-sun-line"></i>
+    </button>
+  </div>
+
   <main class="auth-card">
     <div class="auth-card__header">
-      <div class="auth-card__logo">
+      <a href="index.html" class="auth-card__logo" style="text-decoration: none;">
         <div class="auth-card__logo-icon"><i class="ri-motorbike-line"></i></div>
         <span>APEX MOTORS</span>
-      </div>
+      </a>
       <h1>Create Account</h1>
       <p>Join the APEX rider community & access VIP perks</p>
     </div>
@@ -40,13 +47,23 @@
 
       <div class="form-group">
         <label class="form-label" for="reg-password">Password <span class="required">*</span></label>
-        <input type="password" id="reg-password" class="form-input" placeholder="Min. 8 characters" required data-validate-type="password">
+        <div style="position: relative;">
+          <input type="password" id="reg-password" class="form-input" placeholder="Min. 8 characters" required data-validate-type="password" style="padding-right: 40px;">
+          <button type="button" aria-label="Toggle password visibility" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--color-text-secondary); cursor: pointer;" onclick="const inp = this.previousElementSibling; if(inp.type === 'password'){ inp.type = 'text'; this.innerHTML = '<i class=\'ri-eye-off-line\'></i>'; } else { inp.type = 'password'; this.innerHTML = '<i class=\'ri-eye-line\'></i>'; }">
+            <i class="ri-eye-line"></i>
+          </button>
+        </div>
         <span class="form-error">Password must be at least 8 characters</span>
       </div>
 
       <div class="form-group">
         <label class="form-label" for="reg-confirm-password">Confirm Password <span class="required">*</span></label>
-        <input type="password" id="reg-confirm-password" class="form-input" placeholder="Re-enter password" required data-validate-type="confirm-password">
+        <div style="position: relative;">
+          <input type="password" id="reg-confirm-password" class="form-input" placeholder="Re-enter password" required data-validate-type="confirm-password" style="padding-right: 40px;">
+          <button type="button" aria-label="Toggle password visibility" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--color-text-secondary); cursor: pointer;" onclick="const inp = this.previousElementSibling; if(inp.type === 'password'){ inp.type = 'text'; this.innerHTML = '<i class=\'ri-eye-off-line\'></i>'; } else { inp.type = 'password'; this.innerHTML = '<i class=\'ri-eye-line\'></i>'; }">
+            <i class="ri-eye-line"></i>
+          </button>
+        </div>
         <span class="form-error">Passwords do not match</span>
       </div>
 

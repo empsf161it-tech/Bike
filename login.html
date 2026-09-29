@@ -15,12 +15,19 @@
 </head>
 <body class="auth-page">
 
+  <!-- Theme Toggle -->
+  <div style="position: absolute; top: var(--space-4); right: var(--space-4); z-index: 10;">
+    <button class="navbar__toggle-btn" data-theme-toggle aria-label="Toggle Theme" style="background: var(--color-surface); border: 1px solid var(--color-border); box-shadow: var(--shadow-sm); cursor: pointer;">
+      <i class="ri-sun-line"></i>
+    </button>
+  </div>
+
   <main class="auth-card">
     <div class="auth-card__header">
-      <div class="auth-card__logo">
+      <a href="index.html" class="auth-card__logo" style="text-decoration: none;">
         <div class="auth-card__logo-icon"><i class="ri-motorbike-line"></i></div>
         <span>APEX MOTORS</span>
-      </div>
+      </a>
       <h1>Welcome Back</h1>
       <p>Log in to manage your motorcycle fleet & bookings</p>
     </div>
@@ -32,13 +39,23 @@
         <span class="form-error">Please enter a valid email address</span>
       </div>
 
-      <div class="form-group">
-        <div class="flex justify-between items-center" style="margin-block-end: var(--space-1);">
-          <label class="form-label" for="password">Password <span class="required">*</span></label>
-          <a href="#" class="caption" style="color: var(--color-secondary);">Forgot password?</a>
+      <div class="form-group" style="margin-block-end: 0;">
+        <label class="form-label" for="password">Password <span class="required">*</span></label>
+        <div style="position: relative;">
+          <input type="password" id="password" class="form-input" placeholder="••••••••" required data-validate-type="password" style="padding-right: 40px;">
+          <button type="button" aria-label="Toggle password visibility" style="position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--color-text-secondary); cursor: pointer;" onclick="const inp = this.previousElementSibling; if(inp.type === 'password'){ inp.type = 'text'; this.innerHTML = '<i class=\'ri-eye-off-line\'></i>'; } else { inp.type = 'password'; this.innerHTML = '<i class=\'ri-eye-line\'></i>'; }">
+            <i class="ri-eye-line"></i>
+          </button>
         </div>
-        <input type="password" id="password" class="form-input" placeholder="••••••••" required data-validate-type="password">
         <span class="form-error">Password must be at least 8 characters</span>
+      </div>
+
+      <div class="flex justify-between items-center" style="margin-block-start: var(--space-4); margin-block-end: var(--space-5);">
+        <div class="form-check" style="align-items: center; gap: var(--space-2);">
+          <input type="checkbox" id="remember" style="margin: 0; width: 16px; height: 16px;">
+          <label for="remember" style="margin: 0; font-size: var(--size-caption);">Remember me</label>
+        </div>
+        <a href="#" class="caption" style="color: var(--color-secondary);">Forgot password?</a>
       </div>
 
       <div class="form-success-msg">

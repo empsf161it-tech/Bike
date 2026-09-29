@@ -713,6 +713,30 @@
     });
   }
 
+  /* ── Back to Top Button ───────────────────────────── */
+  function initBackToTop() {
+    const btn = document.createElement('button');
+    btn.className = 'back-to-top';
+    btn.setAttribute('aria-label', 'Back to top');
+    btn.innerHTML = '<i class="ri-arrow-up-line"></i>';
+    document.body.appendChild(btn);
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    }, { passive: true });
+
+    btn.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  }
+
   /* ── Initialize Everything ────────────────────────── */
   function init() {
     initNavbar();
@@ -729,7 +753,7 @@
     initCounters();
     initTypingEffect();
     initNewsletter();
-
+    initBackToTop();
 
     // GSAP animations (wait for GSAP to load)
     if (typeof gsap !== 'undefined') {

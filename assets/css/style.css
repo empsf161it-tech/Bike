@@ -454,6 +454,7 @@ strong, b {
 .btn--accent:hover {
   background: #C49A3D;
   border-color: #C49A3D;
+  color: #1A1A2E;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(212, 167, 71, 0.35);
 }
@@ -961,7 +962,8 @@ textarea.form-input {
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding-block-start: var(--navbar-height);
+  padding-block-start: calc(var(--navbar-height) + var(--space-8));
+  padding-block-end: var(--space-8);
 }
 
 .hero__bg {
@@ -1036,11 +1038,16 @@ textarea.form-input {
 }
 
 .hero__stats {
-  display: flex;
+  display: inline-flex;
+  flex-wrap: wrap;
   gap: var(--space-8);
   margin-block-start: var(--space-10);
-  padding-block-start: var(--space-7);
-  border-block-start: 1px solid var(--color-border);
+  padding: var(--space-5) var(--space-6);
+  background: rgba(13, 13, 13, 0.5);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
 }
 
 .hero__stat {
@@ -1616,6 +1623,8 @@ textarea.form-input {
 }
 
 .blog-card__tag {
+  display: inline-block;
+  white-space: nowrap;
   padding: var(--space-1) var(--space-3);
   background: rgba(230, 57, 70, 0.08);
   color: var(--color-secondary);
@@ -1656,6 +1665,7 @@ textarea.form-input {
 
 .blog-card__author {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   gap: var(--space-3);
   padding-block-start: var(--space-4);
@@ -1742,7 +1752,8 @@ textarea.form-input {
   padding: var(--space-6);
   background: var(--color-bg);
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 .auth-page::before {
@@ -3167,5 +3178,105 @@ textarea.form-input {
   .hero {
     min-height: auto;
     padding: var(--space-6) 0;
+  }
+}
+
+/* ── Back to Top Button ───────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: var(--space-6);
+  right: var(--space-6);
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-secondary);
+  color: #fff;
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  z-index: var(--z-sticky);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all var(--transition-base);
+  box-shadow: var(--shadow-sm);
+}
+
+.back-to-top.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background-color: var(--color-text-primary);
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .back-to-top {
+    bottom: var(--space-4);
+    right: var(--space-4);
+    width: 44px;
+    height: 44px;
+    font-size: 1.25rem;
+  }
+}
+
+/* ── Horizontal Scroll Glider ──────────────────────── */
+.horizontal-scroll {
+  width: 100%;
+  overflow: hidden;
+  padding-block: var(--space-4);
+}
+
+.horizontal-scroll__track {
+  display: flex;
+  gap: var(--space-6);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: var(--space-4);
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-secondary) var(--color-surface);
+}
+
+.horizontal-scroll__track::-webkit-scrollbar {
+  height: 8px;
+}
+
+.horizontal-scroll__track::-webkit-scrollbar-track {
+  background: var(--color-surface);
+  border-radius: var(--radius-full);
+}
+
+.horizontal-scroll__track::-webkit-scrollbar-thumb {
+  background: var(--color-secondary);
+  border-radius: var(--radius-full);
+}
+
+.horizontal-scroll__track .showcase-card {
+  flex: 0 0 380px;
+  min-width: 380px;
+  scroll-snap-align: start;
+}
+
+@media (max-width: 768px) {
+  .horizontal-scroll__track .showcase-card {
+    flex: 0 0 85vw;
+    min-width: 85vw;
+  }
+}
+
+/* ── Card Horizontal Responsive ────────────────────── */
+.card--horizontal {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+@media (max-width: 768px) {
+  .card--horizontal {
+    flex-direction: column;
   }
 }
