@@ -737,6 +737,21 @@
     });
   }
 
+  /* ── Auto Sliding Showcase ────────────────────────── */
+  function initAutoScrollShowcase() {
+    const showcases = document.querySelectorAll('.horizontal-scroll');
+    showcases.forEach(showcase => {
+      const track = showcase.querySelector('.horizontal-scroll__track');
+      if (!track) return;
+      
+      const originalContent = track.innerHTML;
+      track.innerHTML = originalContent + originalContent;
+      
+      track.classList.add('auto-slide-track');
+      showcase.style.overflow = 'hidden';
+    });
+  }
+
   /* ── Initialize Everything ────────────────────────── */
   function init() {
     initNavbar();
@@ -754,6 +769,7 @@
     initTypingEffect();
     initNewsletter();
     initBackToTop();
+    initAutoScrollShowcase();
 
     // GSAP animations (wait for GSAP to load)
     if (typeof gsap !== 'undefined') {

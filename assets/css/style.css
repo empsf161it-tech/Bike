@@ -2661,6 +2661,19 @@ textarea.form-input {
   width: max-content;
 }
 
+.auto-slide-track {
+  animation: autoSlide 25s linear infinite;
+}
+
+.auto-slide-track:hover {
+  animation-play-state: paused;
+}
+
+@keyframes autoSlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - (var(--space-6) / 2))); }
+}
+
 .showcase-card {
   width: 360px;
   flex-shrink: 0;
