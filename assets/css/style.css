@@ -643,6 +643,29 @@ strong, b {
   background: var(--color-surface-alt);
 }
 
+/* ── Transparent Navbar on Dark Hero ─────────────── */
+.navbar--transparent-dark:not(.scrolled) .navbar__logo {
+  color: #FFFFFF;
+}
+
+.navbar--transparent-dark:not(.scrolled) .navbar__link:not(.active) {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar--transparent-dark:not(.scrolled) .navbar__link:hover {
+  color: #FFFFFF;
+}
+
+.navbar--transparent-dark:not(.scrolled) .navbar__toggle-btn,
+.navbar--transparent-dark:not(.scrolled) .navbar__hamburger {
+  color: #FFFFFF;
+}
+
+.navbar--transparent-dark:not(.scrolled) .navbar__toggle-btn:hover,
+.navbar--transparent-dark:not(.scrolled) .navbar__hamburger:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* ── Mobile Drawer ────────────────────────────────── */
 .drawer-overlay {
   position: fixed;
